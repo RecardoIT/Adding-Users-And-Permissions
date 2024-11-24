@@ -30,57 +30,49 @@ This will open a window, where we can see our local domain that we created earli
 <img src="https://i.imgur.com/U7ytgp0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Think of Organization Units as folders within windows, they help to keep the active directory tidy, as well as seperating different organisations within a domain. Right click on the "testdirectory.local" hover over new, and click Organizational Unit to create one of our own.   <br/>
+Think of Organization Units as folders within windows, they help to keep the active directory tidy, as well as seperate different organisations within a domain. Right click on the "testdirectory.local" hover over new, and click Organizational Unit to create one of our own.   <br/>
 <img src="https://i.imgur.com/MBR6mcC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Within Oracle VirtualBox, i will head to the advanced network tab and create a second network adapter under the option internal network. <br/>
-<img src="https://imgur.com/Hpzae80.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+To simulate a working enviroment, lets name this organizational unit as "UK" we are then going to follow the same proccess and make two additional organizational units named "USA" & "ASIA"  <br/>
+<img src="https://i.imgur.com/gIqbRPY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Installing Windows Server 2022.  <br/>
-<img src="https://imgur.com/v8uWdDq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+After that, right click on the "UK" organizational unit we just made, and create 3 seperate organizational units inside of it, called "Computer" "Users" "Server" repeat this proccess for the "USA" and "ASIA" organizational units we created earlier. You will now see that our domain begins to grow a structure, just like it would in a real business!  <br/>
+<img src="https://i.imgur.com/K0Swxs3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once Windows boots into the start menu, go to settings, and then under the "Network & Internet" option, select "Adapter Settings":  <br/>
-<img src="https://imgur.com/sJxxgsI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now the complicated part is out of the way, we can move into creating a group. Right click on any of the "users" organizational units we created and select "new" "group" groups are created to hold a vast amount of users neatly, we'll get into adding users to these groups in just a moment!  <br/>
+<img src="https://i.imgur.com/TEhGdX2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now, click on the first ethernet adapter and "Properties" pay attention to the "IpV4 address" an address starting with (example 10.0.8.12) will be the nat adapter   <br/>
-<img src="https://imgur.com/8isXdtW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+From here, simply give your user a name and surname, here i have used the name "Simon Stone". If your group was called "admins" for example and you wanted to add multiple admin users to the group, then you may want to set the user login name to something like a-sstone. If you added a new user called "Adam Smith" then you could set their login name as "a-asmith" in order to keep the admin names consistent and neat.     <br/>
+<img src="https://i.imgur.com/tlc22xi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once that's done, rename the second network adapter to "internal" so you can clearly differenciate between the internal network, and traffic going through the nat adapter. <br/>
-<img src="https://imgur.com/T3uXGU4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Then, set a password for your new user, i recommend checking "password never expires" as users like to write down their passwords onto paper, and having them write new password every 2 months for example could serve as a security risk to a business! <br/>
+<img src="https://i.imgur.com/v6oRHxr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
-Now we are ready to install Active Directory, search for "Server Manager" through the Windows search bar and open it. <br/>
-<img src="https://imgur.com/4BQZC7i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Lets make one more user to make sure you have got the hang of it. Right click on one of the "users" organizational units and select "new" "user" lets fill in their information again and set them a password like last time, this time i will create a user in the "USA" organizational unit. <br/>
+<img src="https://i.imgur.com/v6oRHxr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Click on the "Manage Tab" and then "Add Roles & Features" Make sure to click the "Active Directory Domain Services" checkbox to ensure the directory is installed properly. <br/>
-<img src="https://imgur.com/iuwVoXs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This time i will name my user "Max Holloway" and then create another group in our "users" organizational folder called L1 Help Desk like last time. <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Click next to any further prompts, and click the "Install" button once reaching the results page.  <br/>
-<img src="https://imgur.com/dAFzyPp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+In order to add a user into a group, right click on a chosen group and click "properties"  <br/>
+<img src="https://imgur.com/HXipZk1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-After that, a new page will open, here we are going to check "Add a new forest" and type in the name of our new local domain! Make sure to add .local to the end of your chosen name in order to create an internal domain.  <br/>
-<img src="https://imgur.com/nGw4CzN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now, enter the name of the user you wish to join the following group, by typing out their name in the object names section.  <br/>
+<img src="https://imgur.com/68MtEi9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Continue to press next on the following prompts, and then hit the "Install" button on the "prerequisites check" page.  <br/>
-<img src="https://imgur.com/nGw4CzN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-You will then be asked to restart your machine, if not then manually press windows logo, the power button and restart your machine. After doing so, the machine will apply the needed computer settings.  <br/>
-<img src="https://imgur.com/UzIzOVm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Finally, open "Server Manager" again, and if successful your AD DS will be marked green, as well as anything else installed during the creation of your internal domain!  <br/>
-<img src="https://imgur.com/gxBpXHt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Finally, press "ok" and then the "apply" button, and that users will now be added to your chosen group!  <br/>
+<img src="https://imgur.com/0MMromZ" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 </p>
