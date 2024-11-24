@@ -1,11 +1,11 @@
-<h1>Installing VM & Active Directory</h1>
+<h1>Organising AD & Perimissions</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
 A project created within Oracle VirtualBox, in which i created two seperate virtual machines, one running Windows Server 2022 to manage Active Directory, and the second running Windows Enterprise. I also show how to configure an internal network inside of Windows Server 2022.
 
-During this section. I will go over how to install your Windows Server 2022 virtual machine, as well as configure the internal network and install active directory.
+In this section, i will be creating users within our Windows Server 2022 Active Directory domain, as well as displaying how to organise users and resources, while setting basic permissions for users and machines.
 <br />
 
 
