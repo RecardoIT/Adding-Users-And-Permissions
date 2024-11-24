@@ -64,15 +64,15 @@ This time i will name my user "Max Holloway" and then create another group in ou
 <br />
 <br />
 In order to add a user into a group, right click on a chosen group and click "properties"  <br/>
-<img src="https://imgur.com/HXipZk1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/HXipZk1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Now, enter the name of the user you wish to join the following group, by typing out their name in the object names section.  <br/>
-<img src="https://imgur.com/68MtEi9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/68MtEi9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Finally, press "ok" and then the "apply" button, and that users will now be added to your chosen group!  <br/>
-<img src="https://imgur.com/0MMromZ" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/0MMromZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 </p>
