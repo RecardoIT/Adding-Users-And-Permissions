@@ -30,7 +30,7 @@ This will open a window, where we can see our local domain that we created earli
 <img src="https://i.imgur.com/U7ytgp0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Thik of Organization Units as folders within windows, they help to keep the active directory tidy, as well as seperating different organisations within a domain. Right click on the "testdirectory.local" hover over new, and click Organizational Unit to create one of our own.   <br/>
+Think of Organization Units as folders within windows, they help to keep the active directory tidy, as well as seperating different organisations within a domain. Right click on the "testdirectory.local" hover over new, and click Organizational Unit to create one of our own.   <br/>
 <img src="https://i.imgur.com/MBR6mcC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
