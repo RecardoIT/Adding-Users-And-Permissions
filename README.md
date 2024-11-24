@@ -22,16 +22,16 @@ In this section, i will be creating users within our Windows Server 2022 Active 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-First, we will Create the Windows Server 2022 VM. Select the "ISO image" option and select your Windows Server 2022 ISO, make sure to check the desktop expirience under the "Type" section inside of Oracle VirtualBox  <br/>
-<img src="https://imgur.com/R6Hd4qY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+To begin, click on the windows search icon, and search for "user" then click on "Active Directory Users and Computers"  <br/>
+<img src="https://imgur.com/FPkDpOE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Next, we will setup an admin username and password to boot into Windows with.  <br/>
-<img src="https://imgur.com/4KN0ihY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This will open a window, where we can see our local domain that we created earlier, mine for example is "testdirectory.local" Left click on this space, and you will see an array of oragnizational units.   <br/>
+<img src="https://i.imgur.com/U7ytgp0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-It's important to allocate the right amount of system memory, as well as CPU threads here. My system contains 16GB RAM, as well as a CPU containing 16 threads. Since we are not running any demanding applications on the Virtual Machine, i will allocate a quarter of RAM & CPU threads to be safe.   <br/>
-<img src="https://imgur.com/3avB9Lc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Thik of Organization Units as folders within windows, they help to keep the active directory tidy, as well as seperating different organisations within a domain. Right click on the "testdirectory.local" hover over new, and click Organizational Unit to create one of our own.   <br/>
+<img src="https://i.imgur.com/MBR6mcC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Within Oracle VirtualBox, i will head to the advanced network tab and create a second network adapter under the option internal network. <br/>
