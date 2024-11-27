@@ -1,7 +1,5 @@
 <h1>Organising Active Directory</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 In this section, i will be creating users within our Windows Server 2022 Active Directory domain, as well as displaying how to organise users and resources.
 <br />
 
